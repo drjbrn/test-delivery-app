@@ -1,6 +1,7 @@
 # test-delivery-app
 
-- Клонувати себі репозиторій `git clone https://github.com/drjbrn/test-delivery-app.git`
+- Клонувати собі репозиторій `git clone https://github.com/drjbrn/test-delivery-app.git`
+- Перейти до папки `cd test-delivery-app`
 - Встановити всі залежності `npm install`
 - Запустити збірку `npm run dev`
 - Відкрити посилання, яке вказане в консолі, скоріш за все буде: http://127.0.0.1:5173/
