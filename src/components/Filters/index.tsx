@@ -25,7 +25,6 @@ function Filters() {
 
   const handleShopClick = (shop: string) => {
     dispatch(setShop(shop));
-    console.log('Shop clicked:', shop);
   };
 
   return(
