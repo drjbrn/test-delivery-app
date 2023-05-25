@@ -47,10 +47,10 @@ onValue(teaRef, (snapshot) => {
     teas.forEach(tea => {
       push(teaRef, tea)
         .then(() => {
-          console.log('Запис успішно додано до бази даних.');
+          console.log('The record is successfully added to the database.');
         })
         .catch((error) => {
-          console.error('Помилка під час додавання запису:', error);
+          console.error('Error adding a record:', error);
         });
     });
   }
