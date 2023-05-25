@@ -1,0 +1,12 @@
+.cart {
+  &__text {
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    gap: 0.5em;
+    height: 65vh;
+    overflow-y: scroll;
+  }
+}
