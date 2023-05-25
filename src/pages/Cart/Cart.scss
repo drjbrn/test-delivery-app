@@ -9,8 +9,10 @@
   }
 
   &__wrapper {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 0.5em;
+    justify-items: center;
   }
 
   &__total-price {
