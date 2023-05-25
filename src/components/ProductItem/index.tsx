@@ -1,10 +1,12 @@
 import Rating from '@mui/material/Rating';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 import './ProductItem.scss';
 import { getAllProducts } from '../../store/productSlice';
+import { addItemToCart } from '../../store/cartSlice';
 
 function ProductItem({ id }: ProductItemProps) {
+  const dispatch = useDispatch();
   const products = useSelector(getAllProducts);
 
   const product = products.find(product => product.id === id);
@@ -12,7 +14,18 @@ function ProductItem({ id }: ProductItemProps) {
   const price = product?.price;
   const rating = product?.rating;
   const shop = product?.shop;
-  console.log(product);
+
+  const handleAddToCart = () => {
+    dispatch(addItemToCart({
+      id: id,
+      title: name,
+      price: price,
+      rating: rating,
+      shop: shop,
+      quantity: 1,
+      totalPrice: price
+    }));
+  };
 
   return (
     <div className='product'>
@@ -33,7 +46,10 @@ function ProductItem({ id }: ProductItemProps) {
       <p className='product__price'>
         {price} &#x24;
       </p>
-      <button className='product__cart-button'>
+      <button
+        className='product__cart-button'
+        onClick={handleAddToCart}
+      >
         <LocalMallIcon />
       </button>
     </div>
