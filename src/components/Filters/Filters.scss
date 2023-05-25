@@ -1,0 +1,17 @@
+.filters {
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: grid;
+    gap: 0.5em;
+  }
+
+  &__btn {
+  border-radius: 20px;
+  width: 150px;
+  padding: 0.5em;
+  background: rgb(250, 235, 215);
+  }
+}
