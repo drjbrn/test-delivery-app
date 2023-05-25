@@ -1,0 +1,15 @@
+.app {
+  margin: 20px 0 0 10px;
+
+  &__button {
+    border-radius: 20px;
+    padding: 0.5em 2em;
+    background: rgb(250, 235, 215);
+
+    &:hover {
+      background: rgba(0, 0, 216, 0.856);
+      color: rgb(255, 255, 255);
+      transition: color 0.5s background 0.5s;
+    }
+  }
+}
