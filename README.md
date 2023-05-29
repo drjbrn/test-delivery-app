@@ -19,3 +19,6 @@
 - Firebase Realtime Database,
 - Material UI,
 - SCSS
+
+UPDATE 29.05.2023:
+Link to page: https://drjbrn.github.io/test-delivery-app
