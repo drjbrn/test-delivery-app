@@ -11,17 +11,17 @@ function App() {
 
   return (
     <div className='app'>
-      <Link to='/' className='app__button'>
+      <Link to='/test-delivery-app/' className='app__button'>
         Shop
       </Link>
-      <Link to='/cart' className='app__button'>
+      <Link to='/test-delivery-app/cart' className='app__button'>
         Cart
         {' '}
         {amountItemsInCart}
       </Link>
       <Routes>
-        <Route path='/' element={<ShopPage />} />
-        <Route path='/cart' element={<Cart />} />
+        <Route path='/test-delivery-app/' element={<ShopPage />} />
+        <Route path='/test-delivery-app/cart' element={<Cart />} />
       </Routes>
     </div>
   );
